@@ -1,0 +1,78 @@
+.scard{
+    @include flex(row,none,none,30px);
+    @media screen and (max-width: 770px) {
+        flex-wrap: wrap;
+    }
+    &_base{
+        @include flex(none,center,center,none);
+        flex-grow: 1;
+        flex-basis: 50%;
+        color: rgb(87, 67, 67);
+        font-size: 18px;
+        box-shadow: 8px 8px aqua;
+        &_adidas{
+            height: 20px
+        }
+    }
+    &_h1{
+        @include flex(column,center,center,none);
+        flex-grow: 1;
+        flex-basis: 50%;
+        & h1{
+            font-family: 'Metrophobic', sans-serif;
+        }
+        & p{
+            font-size: 2.0rem;
+            & a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+.bk{
+    background-color: #bbc4a9;
+}
+.sh1{
+    @include flex(row,none,none,none);
+    font-size: 40px;
+}
+.pic-home{
+    @include flex(row,center,none,none);
+    height: 400px;
+    min-width: 509px;
+}
+.novedades{
+    @include flex(row,none,none,none);
+    &_h1{
+        @include flex(none,start,center,none);
+        background-color: aqua;
+        color: white;
+        font-size: 5.0rem;
+        font-family: 'Major Mono Display', monospace;
+        height: 70px;
+        flex-basis: 75%
+        
+    }
+    &_p{
+        @media screen and (max-width:1200px) {
+            height: 85px;
+        }
+        @media screen and (max-width:990px) {
+            height: 85px;
+        }
+        @media screen and (max-width:538px) {
+            height: 150px;
+        }
+        @include flex(none,center,center,none);
+        background-color: aqua;
+        color: white;
+        font-family: 'Thasadith', sans-serif;
+        font-size: 3.0rem;
+        height: 40px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+
+    }
+}
+

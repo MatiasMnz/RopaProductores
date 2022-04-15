@@ -1,0 +1,49 @@
+ /* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bebas+Neue&family=Dosis:wght@300&family=Noto+Serif&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Bebas+Neue&family=Dosis:wght@300&family=Lobster&family=Noto+Serif&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Major+Mono+Display&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Major+Mono+Display&family=Oswald&family=Thasadith:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&family=Darker+Grotesque&family=Lobster&family=Major+Mono+Display&family=Metrophobic&family=Oswald&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@800&family=Darker+Grotesque&family=Lobster&family=Major+Mono+Display&family=Metrophobic&family=Oswald&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@800&family=Darker+Grotesque&family=Lobster&family=Major+Mono+Display&family=Metrophobic&family=Montserrat:ital,wght@1,500&family=Oswald&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@800&family=Darker+Grotesque&family=Lobster&family=Major+Mono+Display&family=Metrophobic&family=Montserrat:ital,wght@1,500&family=Oswald&family=Righteous&family=Rock+Salt&display=swap');
+
+
+
+*,
+*::after 
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html{
+    
+    color: var($secondary);
+    font-size: 62.5%;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: white;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+

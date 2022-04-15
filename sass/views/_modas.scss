@@ -1,0 +1,81 @@
+.titulo{
+    @include flex(row,none,none,none);
+    margin-top: 60px;
+    &_modas{
+        @include flex(row,start,center,none);
+        flex-basis: 45%;
+        background-color: aqua;
+        padding-left: 20px;
+        height: 80px;
+        font-size: 70px;
+        color: white;
+        font-family: 'Righteous', cursive;
+    }
+}
+.p-texto{
+    @include flex(row,none,none,none);
+    margin-top: 30px;
+    &-modas{
+        @include flex(row,none,none,none);
+        flex-basis: 65%;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 30px;
+    }
+}
+.size-modas{
+    font-size: 1.8em;
+}
+.box-estilo{
+    box-shadow: 8px 8px 8px aqua;
+}
+.subtitulo{
+    @include flex(row,none,none,none);
+    margin-top: 10px;
+    &_estilos{
+        @media screen and (min-width:360px) and (max-width:993px) {
+            flex-basis: 50%;
+        }
+        @include flex(row,start,center,none);
+        flex-basis: 25%;
+        background-color: aqua;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        height: 60px;
+        font-size: 38px;
+        color: white;
+        font-family: 'Righteous', cursive;
+
+    }
+    &_estilos2{
+        @media screen and (max-width:993px) {
+            flex-basis: 100%;
+        }
+        @include flex(row,start,center,none);
+        flex-basis: 55%;
+        background-color: aqua;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        height: 65px;
+        font-size: 35px;
+        color: white;
+        font-family: 'Righteous', cursive;
+
+    }
+}
+.notification{
+    @include flex(row,none,none,none);
+    margin-top: 60px;
+    height: 60px;
+    &_p{
+        @include flex(row,none,none,none);
+        
+        font-size: 2.1em
+    }
+    &_mail{
+        @include flex(row,center,center,none);
+        width: 250px;
+    }
+}
+

@@ -1,0 +1,92 @@
+.titulo-pc{
+    @include flex(row,none,none,none);
+    &-h1{
+        @media screen and (max-width: 993px) {
+            flex-basis: 100%;
+        }
+        @media screen and (max-width: 769px) {
+            flex-basis: 100%;
+        }
+        @include flex(row,none,center,none);
+        margin-top: 70px;
+        padding-left: 20px;
+        flex-basis: 45%;
+        height: 60px;
+        color: white;
+        background-color: aqua;
+        font-size: 60px;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+    &-p{
+        @include flex(row,none,none,none);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        flex-basis: 65%;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-p2{
+        @include flex(row,center,center,none);
+        margin-top: 20px;
+        flex-basis: 65%;
+        font-size: 2.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.subtitulo-pc{
+    @include flex(row,none,center,none);
+    &-h1{
+        @include flex(row,none,center,none);
+        margin-top: 20px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+        flex-basis: 45%;
+        height: 60px;
+        color: white;
+        background-color: aqua;
+        font-size: 60px;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+    &-p{
+        @include flex(row,none,none,none);
+        flex-basis: 65%;
+        font-size: 1.5em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.mail-pc{
+    @include flex(column,none,none,none);
+    &-p{
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-h1{
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.alerta-pc{
+    @include flex(row,start,center,10px);
+    font-size: 1.8em;
+    height: 80px;
+    font-family: 'Metrophobic', sans-serif;
+}
+.aclaracion-pc{
+    @include flex(column,none,none,none);
+    &-p{
+        font-size: 1.9em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-p2{
+        font-size: 1.9em;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-h1{
+        font-size: 2.0em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+.responsive-pc{
+    @media screen and (max-width: 479px) {
+        height: 120px;
+    }
+}

@@ -1,0 +1,183 @@
+.headm{
+    @include flex(row,center,none,none);
+    & p{
+        @include flex(row,center,none,none);
+        flex-basis: 35%;
+        background-image: linear-gradient(to right top, #17031a, #120518, #0e0714, #0b0810, #090909);
+        background-repeat: no-repeat;
+        background-size: cover;
+        & a{
+            @include flex(row,center,center,none);
+        color: white;
+        font-size: 5.0rem;
+        font-family: 'Cinzel Decorative', cursive;
+        height: 60px;
+        text-decoration: none;
+        flex-grow: 1
+        }
+    }
+}
+
+.articlem{
+    @include flex(row,none,none,none);
+    flex-grow: 1;
+    color: black;
+    &_style{
+        flex-basis: 100%;
+        height: 100px;
+        & p{
+            @include flex(none,center,center,none);
+            font-size: 2.0em;
+            font-family: 'Darker Grotesque', sans-serif;
+        }
+        & h1{
+            @media screen and (max-width:769px) {
+                width: 100%;
+            }
+           font-size: 5.0em;
+           font-family: 'Darker Grotesque', sans-serif;
+        }
+    }
+}
+
+.pic-muestrario{
+    @include flex(row,none,none,50px);
+    padding-bottom: 50px;
+    @media screen and (max-width: 771px) {
+        flex-wrap: wrap;
+    }
+}
+.encabezados{
+    @include flex(row,none,none,none);
+    flex-grow: 1;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    & div{
+        flex-basis: 100%;
+        & h1{
+            @include flex(row,center,none,none);
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 5.4em;
+            
+        }
+    }
+}
+.oferta{
+    &_tamaño_pesos{
+        @include flex(row,center,center,none);
+        width: 100px;
+    }
+    &_tamaño_numeros{
+        @include flex(row,center,none,none);
+        width: 100px;
+    }
+
+}
+
+.tamaño{
+    @include flex(row,center,center,none);
+    font-size: 30px;
+    font-family: 'Darker Grotesque', sans-serif;
+    &_input{
+        font-size: 100px;
+    }
+    &_comentarios{
+        height: 100px;
+    }
+}
+.tamaño_numeros{
+    @include flex(row,center,center,none);
+    font-size: 30px;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+.size{
+    width: 100%;
+}
+.input{
+    @include flex(row,center,center,none);
+    flex-basis: 100%;
+    &_color{
+        box-shadow: 8px 8px black;
+    }
+}
+.interactivo{
+    @include flex(row,none,none,none);
+    flex-grow: 1;
+    padding-bottom: 60px;
+    & div{
+        flex-basis: 100%;
+        & h1{
+            @include flex(row,center,none,none);
+            font-family: 'Darker Grotesque', sans-serif;
+            font-size: 5.4em;
+        }
+    }
+}
+.grid-remera{
+    @media screen and (min-width:993px) {
+        flex-wrap: wrap;
+        flex-grow: 1;
+        @include flex(none,none,none,none);
+    display: grid;
+    grid-template-areas: "index1  index2  index3"
+                         "index1  index2  index3"
+                         "index1  index2  index3"
+                         "index4  index5  index6";
+    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+.grid-remera-config{
+  padding-right: 10px;
+}
+.index1{
+    @include flex(none,none,none,none);
+    grid-area: index1;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+}
+.index2{
+    @include flex(none,none,none,none);
+    grid-area: index2;
+    background-size: cover;
+    background-position: center;
+}
+.index3{
+    @include flex(none,none,none,none);
+    grid-area: index3;
+    background-size: cover;
+    background-position: center;
+}
+.index4{
+    @media screen and (min-width:993px){
+        @include flex(none,center,center,none);
+        grid-area: index4;
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 20px;
+    }
+    @media screen and (max-width:993px){
+        color: white ;
+    }
+}
+.index5{
+    @media screen and (max-width:993px){
+        color: white ;
+    }
+    @include flex(none,center,center,none);
+    grid-area: index5;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+}
+.index6{
+    @media screen and (max-width:993px){
+        color: white ;
+    }
+    @include flex(none,center,center,none);
+    grid-area: index6;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+     text-align: right;
+     padding-top: 10px;
+}

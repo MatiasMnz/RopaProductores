@@ -1,0 +1,11 @@
+footer{
+    @include flex(row,center,center,none);
+    height: 10vh;
+    & p{
+        text-align: center;
+        font-size: 1.4em;
+        &.size-f{
+            font-size: 14px;
+        }
+    }
+}
